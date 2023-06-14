@@ -10,7 +10,12 @@ import {
 } from '@ui-kitten/components';
 
 const BackIcon = (props: any): IconElement => (
-  <Icon {...props} name="arrow-back" />
+  <Icon
+    {...props}
+    name="arrow-back-outline"
+    fill="white"
+    style={{width: 35, height: 35, marginStart: -5}}
+  />
 );
 
 const BackAction = (): React.ReactElement => (
@@ -20,127 +25,160 @@ const BackAction = (): React.ReactElement => (
 const BahasaJepang = () => {
   return (
     <Layout>
-      <Layout>
-        <TopNavigation accessoryLeft={BackAction} title="Home" />
-      </Layout>
       <ScrollView>
+        <TopNavigation
+          style={{backgroundColor: '#415A77'}}
+          accessoryLeft={BackAction}
+        />
+
         <Layout style={styles.container}>
-          <Layout style={styles.headerWrapper}>
+          <View style={styles.mainHeader}>
             <Text style={styles.header}>Bahasa</Text>
             <Text style={styles.header2}>Jepang</Text>
-          </Layout>
+          </View>
 
-          <Layout style={styles.pointWrapper}>
-            <Text style={styles.point}>&#8226; Hiragana</Text>
-          </Layout>
+          <View style={styles.card}>
+            <View style={styles.pointWrapper}>
+              <Text style={styles.pointHeader}>Hiragana</Text>
+            </View>
+            <View style={styles.cardDesc}>
+              <Text style={styles.text}>
+                {'\t\t\t'}Awalnya di Jepang hanya ada huruf kanji yang
+                dikenalkan oleh negara Cina. Hingga pada zaman Heian, karena
+                penulisan kanji sangat rumit, seorang pendeta yang juga seorang
+                penulis membuat hiragana yang dikembangkan dari huruf kanji
+                tersebut.
+              </Text>
+              <Text style={styles.text}>
+                {'\t\t\t'}Walau hiragana telah dibuat, saat itu hanya digunakan
+                oleh kaum perempuan dalam membuat surat, puisi, cerita, esai dan
+                lainnya.
+              </Text>
+            </View>
+          </View>
 
-          <Text style={styles.desc}>
-            {'\t\t\t\t\t'}Awalnya di Jepang hanya ada huruf kanji yang
-            dikenalkan oleh negara Cina. Hingga pada zaman Heian, karena
-            penulisan kanji sangat rumit, seorang pendeta yang juga seorang
-            penulis membuat hiragana yang dikembangkan dari huruf kanji
-            tersebut.
-          </Text>
-          <Text style={styles.desc}>
-            {'\t\t\t\t\t'}Walau hiragana telah dibuat, saat itu hanya digunakan
-            oleh kaum perempuan dalam membuat surat, puisi, cerita, esai dan
-            lainnya.
-          </Text>
-
-          <Layout style={styles.photo}>
+          <View style={styles.imgWrapper}>
             <Image
               style={styles.img}
               source={require('../../assets/img/Hiragana.jpg')}
             />
-          </Layout>
+          </View>
 
-          <Layout style={styles.photo}>
+          <View style={styles.imgWrapper}>
             <Image
-              style={styles.img}
+              style={styles.img2}
               source={require('../../assets/img/Hiragana2.png')}
             />
-          </Layout>
+          </View>
 
-          <Layout style={styles.pointWrapper}>
-            <Text style={styles.point}>&#8226; Katakana</Text>
-          </Layout>
+          <View style={styles.card}>
+            <View style={styles.pointWrapper}>
+              <Text style={styles.pointHeader}>Katakana</Text>
+            </View>
+            <View style={styles.cardDesc}>
+              <Text style={styles.text}>
+                {'\t\t\t'}Katakana lahir bersamaan dengan hiragana. Di mana
+                kedua huruf ini berasal dari huruf kanji.
+              </Text>
+              <Text style={styles.text}>
+                {'\t\t\t'}Katakana biasanya digunakan untuk menulis kata-kata
+                yang berasal dari bahasa asing yang sudah diserap ke dalam
+                Bahasa Jepang (外来語/gairaigo) selain itu juga digunakan untuk
+                menuliskan onomatope dan kata-kata asli Bahasa Jepang, hal ini
+                hanya bersifat penegasan saja.
+              </Text>
+            </View>
+          </View>
 
-          <Text style={styles.desc}>
-            {'\t\t\t\t\t'}Katakana lahir bersamaan dengan hiragana. Di mana
-            kedua huruf ini berasal dari huruf kanji.
-          </Text>
-          <Text style={styles.desc}>
-            {'\t\t\t\t\t'}Katakana biasanya digunakan untuk menulis kata-kata
-            yang berasal dari bahasa asing yang sudah diserap ke dalam Bahasa
-            Jepang (外来語/gairaigo) selain itu juga digunakan untuk menuliskan
-            onomatope dan kata - kata asli Bahasa Jepang, hal ini hanya bersifat
-            penegasan saja.
-          </Text>
-
-          <Layout style={styles.photo}>
+          <View style={styles.imgWrapper}>
             <Image
               style={styles.img}
               source={require('../../assets/img/Katakana.png')}
             />
-          </Layout>
+          </View>
 
-          <Layout style={styles.photo}>
+          <View style={styles.imgWrapper}>
             <Image
               style={styles.img}
               source={require('../../assets/img/Katakana2.png')}
             />
-          </Layout>
+          </View>
 
-          <Layout style={styles.pointWrapper2}>
-            <Text style={styles.point2}>&#8226; Kanji</Text>
-          </Layout>
+          <View style={styles.card}>
+            <View style={styles.pointWrapper}>
+              <Text style={styles.pointHeader}>Kanji</Text>
+            </View>
+            <View style={styles.cardDesc}>
+              <Text style={styles.text}>
+                {'\t\t\t'}Huruf kanji 漢字 di buat di China lebih dari 3000
+                tahun yang lalu. Setiap karakter Kanji memiliki dua pengucapan,
+                yaitu pengucapan China yang biasa di sebut On Yomi (音読み) dan
+                pengucapan Jepang yang biasa di sebut Kun Yomi (訓読み).
+              </Text>
+              <Text style={styles.text}>{'\t\t\t'}</Text>
+            </View>
+          </View>
 
-          <Text style={styles.desc}>
-            {'\t\t\t\t\t'}Huruf kanji 漢字 di buat di China lebih dari 3000
-            tahun yang lalu. Setiap karakter Kanji memiliki dua pengucapan,
-            yaitu pengucapan China yang biasa di sebut On Yomi (音読み) dan
-            pengucapan Jepang yang biasa di sebut Kun Yomi (訓読み).
-          </Text>
+          <View style={styles.card}>
+            <View style={styles.pointWrapper}>
+              <Text style={styles.pointHeader}>Huruf Kanji</Text>
+            </View>
+            <View style={styles.cardDesc2}>
+              <Text style={styles.text}>くんよみ (kunyomi)：ひ/び</Text>
+              <Text style={styles.text}>おんよみ (onyomi)：にち</Text>
+            </View>
+          </View>
 
-          <Layout style={styles.kanjiWrapper}>
-            <Text style={styles.kanjidesc}>Huruf Kanji</Text>
-            <Text style={styles.desc}>くんよみ (kunyomi)：ひ/び</Text>
-            <Text style={styles.desc}>おんよみ (onyomi)：にち</Text>
-          </Layout>
-
-          <Layout style={styles.gif}>
+          <View style={styles.imgWrapper}>
             <Image
-              style={styles.img}
+              style={styles.gif}
               source={require('../../assets/img/Kanji.gif')}
             />
-          </Layout>
+          </View>
 
-          <Layout style={styles.pointWrapper3}>
-            <Text style={styles.point2}>&#8226; Tips Menghafal</Text>
-          </Layout>
+          <View style={styles.card}>
+            <View style={styles.pointWrapper2}>
+              <Text style={styles.pointHeader}>Tips Menghafal</Text>
+            </View>
+            <View style={styles.cardDesc3}>
+              <View style={styles.numberWrapper}>
+                <Layout style={styles.number}>
+                  <Text style={styles.text2}>1</Text>
+                </Layout>
+                <Text style={styles.text}>
+                  Belajarlah cara membaca dulu kemudian baru menulis huruf
+                  tersebut.
+                </Text>
+              </View>
 
-          <Text style={styles.tips}>
-            <Text style={styles.num}>1.</Text>
-            {'\t\t'}Belajarlah cara membaca dulu kemudian baru menulis huruf
-            tersebut.
-          </Text>
-          <Text style={styles.tips}>
-            <Text style={styles.num}>2.</Text>
-            {'\t\t'}Latihan rutin mengikuti aturan guratan dalam penulisan
-            hiragana dan katakana, dan kanji.
-          </Text>
-          <Text style={styles.tips}>
-            <Text style={styles.num}>3.</Text>
-            {'\t\t'}Langsung diaplikasikan huruf hiragana, katakana dan kanji
-            yang sudah dihafal.
-          </Text>
+              <View style={styles.numberWrapper}>
+                <Layout style={styles.number}>
+                  <Text style={styles.text2}>2</Text>
+                </Layout>
+                <Text style={styles.text}>
+                  Latihan rutin mengikuti aturan guratan dalam penulisan
+                  hiragana dan katakana, dan kanji.
+                </Text>
+              </View>
 
-          <Layout style={styles.photo2}>
+              <View style={styles.numberWrapper}>
+                <Layout style={styles.number}>
+                  <Text style={styles.text2}>3</Text>
+                </Layout>
+                <Text style={styles.text}>
+                  Langsung diaplikasikan huruf hiragana, katakana dan kanji yang
+                  sudah dihafal.
+                </Text>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.imgWrapper}>
             <Image
-              style={styles.img}
+              style={styles.img3}
               source={require('../../assets/img/Tips.png')}
             />
-          </Layout>
+          </View>
         </Layout>
       </ScrollView>
     </Layout>
@@ -151,125 +189,154 @@ export default BahasaJepang;
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 10,
-    paddingBottom: 75,
+    paddingHorizontal: 15,
     width: '100%',
     height: '100%',
+    backgroundColor: '#415A77',
+    alignItems: 'center',
   },
 
-  headerWrapper: {
-    marginLeft: 30,
+  mainHeader: {
+    marginBottom: 40,
   },
 
   header: {
     marginTop: -5,
-    fontFamily: 'Quicksand',
     fontSize: 72,
-    fontWeight: '400',
+    color: 'white',
   },
 
   header2: {
     marginTop: -25,
     marginLeft: 50,
-    fontFamily: 'Quicksand',
     fontSize: 72,
-    fontWeight: '400',
+    color: 'white',
+  },
+
+  card: {
+    width: 350,
+    paddingBottom: 50,
+    marginBottom: 25,
+    borderTopLeftRadius: 15,
+    borderTopRightRadius: 80,
+    borderBottomLeftRadius: 80,
+    borderBottomRightRadius: 15,
+    backgroundColor: '#778DA9',
+
+    shadowColor: '#0D1B2A',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 2,
+    elevation: 2,
+  },
+
+  cardDesc: {
+    paddingHorizontal: 20,
+    paddingTop: 5,
+  },
+
+  cardDesc2: {
+    paddingHorizontal: 20,
+    paddingTop: 30,
+    alignItems: 'center',
+  },
+
+  cardDesc3: {
+    paddingHorizontal: 10,
+    paddingTop: 5,
   },
 
   pointWrapper: {
-    marginTop: 15,
-    marginBottom: 10,
-    width: 200,
-    height: 60,
-    backgroundColor: 'black',
-    alignItems: 'center',
-    borderRadius: 5,
+    width: 250,
+    height: 50,
+    borderTopLeftRadius: 15,
+    borderBottomRightRadius: 15,
+    backgroundColor: '#1B263B',
   },
 
   pointWrapper2: {
-    marginTop: 15,
-    marginBottom: 10,
-    width: 150,
-    height: 60,
-    backgroundColor: 'black',
-    borderRadius: 5,
+    width: 250,
+    height: 95,
+    borderTopLeftRadius: 15,
+    borderBottomRightRadius: 15,
+    backgroundColor: '#1B263B',
   },
 
-  pointWrapper3: {
-    marginTop: 15,
-    marginBottom: 10,
-    width: 300,
-    height: 60,
-    backgroundColor: 'black',
-    borderRadius: 5,
-  },
-
-  point2: {
-    marginStart: 15,
-    fontSize: 36,
-    fontFamily: 'Quicksand',
-    fontWeight: '400',
+  pointHeader: {
+    fontSize: 32,
+    marginStart: 40,
     color: 'white',
-  },
-
-  point: {
-    fontSize: 36,
-    fontFamily: 'Quicksand',
-    fontWeight: '400',
-    color: 'white',
-  },
-
-  desc: {
-    fontFamily: 'Quicksand',
-    fontSize: 20,
-    textAlign: 'justify',
-  },
-
-  tips: {
-    fontFamily: 'Quicksand',
-    fontSize: 20,
-    textAlign: 'justify',
-  },
-
-  photo: {
-    marginTop: 10,
-    marginBottom: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-
-  photo2: {
-    marginTop: 15,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
 
   gif: {
-    marginTop: 10,
-    justifyContent: 'center',
-    alignItems: 'center',
+    width: 225,
+    height: 225,
+    borderRadius: 15,
+    resizeMode: 'cover',
   },
 
   img: {
-    width: 250,
-    height: 185,
-    resizeMode: 'contain',
+    borderRadius: 15,
+    resizeMode: 'cover',
   },
 
-  kanjidesc: {
-    fontFamily: 'Quicksand',
-    fontSize: 32,
+  img2: {
+    width: 230,
+    height: 200,
+    borderRadius: 15,
+    resizeMode: 'cover',
   },
 
-  kanjiWrapper: {
-    marginTop: 10,
-    justifyContent: 'center',
+  img3: {
+    width: 300,
+    height: 200,
+    borderRadius: 15,
+    resizeMode: 'cover',
+  },
+
+  imgWrapper: {
+    padding: 10,
+    marginBottom: 25,
     alignItems: 'center',
+    borderRadius: 15,
+    backgroundColor: '#778DA9',
+
+    shadowColor: '#0D1B2A',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 1,
+    shadowRadius: 2,
+    elevation: 2,
   },
 
-  num: {
-    fontFamily: 'Quicksand',
+  text: {
+    color: 'white',
     fontSize: 20,
-    fontWeight: 'bold',
+  },
+
+  text2: {
+    color: 'black',
+    fontSize: 28,
+  },
+
+  numberWrapper: {
+    width: 275,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    marginBottom: 10,
+  },
+
+  number: {
+    width: 50,
+    height: 50,
+    borderRadius: 50,
+    alignItems: 'center',
+    backgroundColor: '#E0E1DD',
   },
 });
