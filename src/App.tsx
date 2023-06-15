@@ -8,12 +8,13 @@ import BudayaJepang from './pages/budayaJepang';
 import KesempatanJepang from './pages/kesempatanJepang';
 import KehidupanJepang from './pages/kehidupanJepang';
 import KondisiJepang from './pages/kondisiJepang';
+import ProspekKerja from './pages/prospekKerja';
 
 export default () => (
   <>
     <IconRegistry icons={EvaIconsPack} />
     <ApplicationProvider {...eva} theme={eva.light} customMapping={mapping}>
-      <KondisiJepang />
+      <ProspekKerja />
     </ApplicationProvider>
   </>
 );
