@@ -13,8 +13,9 @@ import ProspekKerja from './pages/prospekKerja';
 export default () => (
   <>
     <IconRegistry icons={EvaIconsPack} />
-    <ApplicationProvider {...eva} theme={eva.light} customMapping={mapping}>
-      <ProspekKerja />
-    </ApplicationProvider>
+    <ApplicationProvider
+      {...eva}
+      theme={eva.light}
+      customMapping={mapping}></ApplicationProvider>
   </>
 );
