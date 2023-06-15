@@ -6,14 +6,16 @@ import {default as mapping} from '../mapping.json';
 import BahasaJepang from './pages/bahasaJepang';
 import BudayaJepang from './pages/budayaJepang';
 import KesempatanJepang from './pages/kesempatanJepang';
+import KehidupanJepang from './pages/kehidupanJepang';
 
 export default () => (
   <>
     <IconRegistry icons={EvaIconsPack} />
     <ApplicationProvider {...eva} theme={eva.light} customMapping={mapping}>
       {/* <BahasaJepang />
-      <BudayaJepang /> */}
-      <KesempatanJepang />
+      <BudayaJepang />
+      <KesempatanJepang /> */}
+      <KehidupanJepang />
     </ApplicationProvider>
   </>
 );
