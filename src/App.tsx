@@ -7,15 +7,13 @@ import BahasaJepang from './pages/bahasaJepang';
 import BudayaJepang from './pages/budayaJepang';
 import KesempatanJepang from './pages/kesempatanJepang';
 import KehidupanJepang from './pages/kehidupanJepang';
+import KondisiJepang from './pages/kondisiJepang';
 
 export default () => (
   <>
     <IconRegistry icons={EvaIconsPack} />
     <ApplicationProvider {...eva} theme={eva.light} customMapping={mapping}>
-      {/* <BahasaJepang />
-      <BudayaJepang />
-      <KesempatanJepang /> */}
-      <KehidupanJepang />
+      <KondisiJepang />
     </ApplicationProvider>
   </>
 );
