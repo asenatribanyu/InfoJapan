@@ -55,7 +55,7 @@ const Home = ({navigation}: {navigation: any}) => {
         <Layout style={styles.topnav}>
           <Text
             style={{fontFamily: 'Quicksand', fontSize: 30, fontWeight: '700'}}>
-            Info Japan
+            Infomasi Jepang
           </Text>
         </Layout>
         <Layout style={styles.WeatherWrap}>
@@ -152,7 +152,7 @@ const Home = ({navigation}: {navigation: any}) => {
           </Text>
         </Layout>
         <Layout style={styles.MenuWrap}>
-          <TouchableOpacity onPress={() => navigation.navigate('Second')}>
+          <TouchableOpacity onPress={() => navigation.navigate('BahasaJepang')}>
             <Layout style={styles.Menu}>
               <Image
                 style={styles.image}
@@ -161,7 +161,7 @@ const Home = ({navigation}: {navigation: any}) => {
               <Text style={styles.TextMenu}>Bahasa Jepang</Text>
             </Layout>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('BudayaJepang')}>
             <Layout style={styles.Menu}>
               <Image
                 style={styles.image}
@@ -170,7 +170,8 @@ const Home = ({navigation}: {navigation: any}) => {
               <Text style={styles.TextMenu}>Keunikan Budaya Jepang</Text>
             </Layout>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('KesempatanJepang')}>
             <Layout style={styles.Menu}>
               <Image
                 style={styles.image}
@@ -179,7 +180,8 @@ const Home = ({navigation}: {navigation: any}) => {
               <Text style={styles.TextMenu}>Kesempatan ke Jepang</Text>
             </Layout>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('KehidupanJepang')}>
             <Layout style={styles.Menu}>
               <Image
                 style={styles.image}
@@ -188,7 +190,8 @@ const Home = ({navigation}: {navigation: any}) => {
               <Text style={styles.TextMenu}>Kehidupan di Jepang</Text>
             </Layout>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() => navigation.navigate('KondisiJepang')}>
             <Layout style={styles.Menu}>
               <Image
                 style={styles.image}
@@ -197,7 +200,7 @@ const Home = ({navigation}: {navigation: any}) => {
               <Text style={styles.TextMenu}>Kondisi Jepang Terkini</Text>
             </Layout>
           </TouchableOpacity>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('ProspekKerja')}>
             <Layout style={styles.Menu}>
               <Image
                 style={styles.image}

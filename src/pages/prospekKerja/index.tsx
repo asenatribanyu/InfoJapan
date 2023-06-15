@@ -26,11 +26,6 @@ const ProspekKerja = () => {
   return (
     <Layout>
       <ScrollView>
-        <TopNavigation
-          style={{backgroundColor: '#415A77'}}
-          accessoryLeft={BackAction}
-        />
-
         <Layout style={styles.container}>
           <View style={styles.mainHeader}>
             <Text style={styles.header}>Prospek </Text>

@@ -22,9 +22,63 @@ export default () => (
       <ApplicationProvider {...eva} theme={eva.light} customMapping={mapping}>
         <Stack.Navigator>
           <Stack.Screen
-            name="Home"
+            name="Informasi Jepang"
             component={Home}
             options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="BahasaJepang"
+            component={BahasaJepang}
+            options={{
+              headerStyle: {backgroundColor: '#415A77'},
+              headerTintColor: 'white',
+              headerTitle: '',
+            }}
+          />
+          <Stack.Screen
+            name="BudayaJepang"
+            component={BudayaJepang}
+            options={{
+              headerStyle: {backgroundColor: '#415A77'},
+              headerTintColor: 'white',
+              headerTitle: '',
+            }}
+          />
+          <Stack.Screen
+            name="KesempatanJepang"
+            component={KesempatanJepang}
+            options={{
+              headerStyle: {backgroundColor: '#415A77'},
+              headerTintColor: 'white',
+              headerTitle: '',
+            }}
+          />
+          <Stack.Screen
+            name="KehidupanJepang"
+            component={KehidupanJepang}
+            options={{
+              headerStyle: {backgroundColor: '#415A77'},
+              headerTintColor: 'white',
+              headerTitle: '',
+            }}
+          />
+          <Stack.Screen
+            name="KondisiJepang"
+            component={KondisiJepang}
+            options={{
+              headerStyle: {backgroundColor: '#415A77'},
+              headerTintColor: 'white',
+              headerTitle: '',
+            }}
+          />
+          <Stack.Screen
+            name="ProspekKerja"
+            component={ProspekKerja}
+            options={{
+              headerStyle: {backgroundColor: '#415A77'},
+              headerTintColor: 'white',
+              headerTitle: '',
+            }}
           />
         </Stack.Navigator>
       </ApplicationProvider>
