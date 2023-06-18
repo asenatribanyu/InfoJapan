@@ -395,7 +395,6 @@ export default KehidupanJepang;
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 15,
-    paddingBottom: 50,
     width: '100%',
     height: '100%',
     backgroundColor: '#415A77',
@@ -570,7 +569,7 @@ const styles = StyleSheet.create({
   },
 
   scroll: {
-    height: 300,
+    height: 350,
   },
 
   scroll2: {
