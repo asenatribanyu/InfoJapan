@@ -403,7 +403,7 @@ const BudayaJepang = () => {
           <View style={styles.imgWrapper}>
             <Image
               style={styles.img3}
-              source={require('../../assets/img/Fest.jpg')}
+              source={require('../../assets/img/Festi.jpg')}
             />
             <Text style={styles.text}>Sumber: Japanvisitor.com</Text>
           </View>
@@ -411,7 +411,7 @@ const BudayaJepang = () => {
           <View style={styles.imgWrapper}>
             <Image
               style={styles.img3}
-              source={require('../../assets/img/Fest2.jpg')}
+              source={require('../../assets/img/Festi2.jpg')}
             />
             <Text style={styles.text}>Sumber: Goingaijin.com</Text>
           </View>
@@ -419,7 +419,7 @@ const BudayaJepang = () => {
           <View style={styles.imgWrapper}>
             <Image
               style={styles.img3}
-              source={require('../../assets/img/Fest3.jpg')}
+              source={require('../../assets/img/Festi3.jpg')}
             />
             <Text style={styles.text}>Sumber: Just My Japan</Text>
           </View>
