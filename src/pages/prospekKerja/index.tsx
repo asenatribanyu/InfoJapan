@@ -156,7 +156,6 @@ export default ProspekKerja;
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 15,
-    paddingBottom: 50,
     width: '100%',
     height: '100%',
     backgroundColor: '#415A77',
@@ -287,11 +286,11 @@ const styles = StyleSheet.create({
   },
 
   scroll: {
-    height: 535,
+    height: 550,
   },
 
   scroll2: {
-    height: 285,
+    height: 295,
   },
 
   imgWrapper: {

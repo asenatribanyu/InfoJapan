@@ -75,11 +75,22 @@ const KondisiJepang = () => {
             </View>
           </ScrollView>
 
+          <View style={styles.sumberWrapper}>
+            <Text style={styles.text}>
+              Sumber:
+              https://www.cnbcindonesia.com/news/20220608124130-4-345308/ada-titik-cerah-kontraksi-ekonomi-jepang-mulai-menciut/1
+            </Text>
+          </View>
+
           <View style={styles.imgWrapper}>
             <Image
               style={styles.img4}
               source={require('../../assets/img/Ekonomi.jpg')}
             />
+            <Text style={styles.text}>
+              Sumber:
+              https://www.cnbcindonesia.com/news/20220608124130-4-345308/ada-titik-cerah-kontraksi-ekonomi-jepang-mulai-menciut/1
+            </Text>
           </View>
 
           <View style={styles.card}>
@@ -114,6 +125,10 @@ const KondisiJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/Fenomena2.jpg')}
             />
+            <Text style={styles.text}>
+              Sumber:
+              https://www.jawapos.com/internasional/08/08/2019/nagoro-desa-yang-dihuni-ratusan-boneka-orang-orangan-sawah/
+            </Text>
           </View>
 
           <View style={styles.card}>
@@ -134,14 +149,18 @@ const KondisiJepang = () => {
                 </Layout>
                 <Text style={styles.text3}>Slow Living</Text>
               </View>
-
-              <View style={styles.imgWrapper2}>
-                <Image
-                  style={styles.img3}
-                  source={require('../../assets/img/Fenomena3.jpg')}
-                />
-              </View>
             </View>
+          </View>
+
+          <View style={styles.imgWrapper}>
+            <Image
+              style={styles.img3}
+              source={require('../../assets/img/Fenomena3.jpg')}
+            />
+            <Text style={styles.text}>
+              Sumber:
+              https://www.japantimes.co.jp/news/2017/01/03/national/social-issues/slow-life-rural-japan-converting-young-people/
+            </Text>
           </View>
 
           <View style={styles.card}>
@@ -222,7 +241,6 @@ export default KondisiJepang;
 const styles = StyleSheet.create({
   container: {
     paddingHorizontal: 15,
-    paddingBottom: 50,
     width: '100%',
     height: '100%',
     backgroundColor: '#415A77',
@@ -287,6 +305,13 @@ const styles = StyleSheet.create({
   cardDesc3: {
     paddingHorizontal: 10,
     paddingTop: 5,
+  },
+
+  sumberWrapper: {
+    padding: 10,
+    marginBottom: 20,
+    backgroundColor: '#778DA9',
+    borderRadius: 15,
   },
 
   pointWrapper: {
@@ -424,7 +449,7 @@ const styles = StyleSheet.create({
   },
 
   scroll: {
-    height: 50,
+    height: 100,
     marginBottom: 10,
     marginTop: -10,
   },

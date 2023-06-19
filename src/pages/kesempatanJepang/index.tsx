@@ -53,6 +53,7 @@ const KesempatanJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/Homestay.png')}
             />
+            <Text style={styles.text}>Sumber: Homestay-in-japan.com</Text>
           </View>
 
           <View style={styles.card}>
@@ -74,6 +75,7 @@ const KesempatanJepang = () => {
               style={styles.img4}
               source={require('../../assets/img/Talent.jpg')}
             />
+            <Text style={styles.text}>Sumber: Google</Text>
           </View>
 
           <View style={styles.card}>
@@ -97,6 +99,7 @@ const KesempatanJepang = () => {
               style={styles.img4}
               source={require('../../assets/img/Pidato.jpg')}
             />
+            <Text style={styles.text}>Sumber: Dok.Prodi BJ Widyatama</Text>
           </View>
 
           <View style={styles.card}>
@@ -118,6 +121,7 @@ const KesempatanJepang = () => {
               style={styles.img4}
               source={require('../../assets/img/Beasiswa.jpg')}
             />
+            <Text style={styles.text}>Sumber: Google</Text>
           </View>
 
           <View style={styles.card}>
@@ -212,6 +216,7 @@ const KesempatanJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/Beasiswa2.jpg')}
             />
+            <Text style={styles.text}>Sumber: Google</Text>
           </View>
 
           <View style={styles.imgWrapper}>

@@ -172,6 +172,7 @@ const BudayaJepang = () => {
               style={styles.img4}
               source={require('../../assets/img/Disiplin.jpg')}
             />
+            <Text style={styles.text}>Sumber: bersosial.com</Text>
           </View>
 
           <View style={styles.card}>
@@ -230,6 +231,7 @@ const BudayaJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/Bersih.jpg')}
             />
+            <Text style={styles.text}>Sumber: Akurat.co</Text>
           </View>
 
           <View style={styles.imgWrapper}>
@@ -237,6 +239,7 @@ const BudayaJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/Bersih2.jpg')}
             />
+            <Text style={styles.text}>Sumber: Liputan6.com</Text>
           </View>
 
           <View style={styles.card}>
@@ -307,6 +310,7 @@ const BudayaJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/EtikaMakan2.jpg')}
             />
+            <Text style={styles.text}>Sumber: Livejapan.com</Text>
           </View>
 
           <View style={styles.imgWrapper}>
@@ -314,6 +318,7 @@ const BudayaJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/EtikaMakan3.jpg')}
             />
+            <Text style={styles.text}>Sumber: Matcha.jp.com</Text>
           </View>
 
           <View style={styles.card}>
@@ -400,6 +405,7 @@ const BudayaJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/Fest.jpg')}
             />
+            <Text style={styles.text}>Sumber: Japanvisitor.com</Text>
           </View>
 
           <View style={styles.imgWrapper}>
@@ -407,6 +413,7 @@ const BudayaJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/Fest2.jpg')}
             />
+            <Text style={styles.text}>Sumber: Goingaijin.com</Text>
           </View>
 
           <View style={styles.imgWrapper}>
@@ -414,6 +421,7 @@ const BudayaJepang = () => {
               style={styles.img3}
               source={require('../../assets/img/Fest3.jpg')}
             />
+            <Text style={styles.text}>Sumber: Just My Japan</Text>
           </View>
 
           <View style={styles.card}>
