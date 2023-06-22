@@ -39,7 +39,7 @@ const Home = ({navigation}: {navigation: any}) => {
   const fetchWeatherData = async () => {
     try {
       const response = await axios.get(
-        'https://api.weatherapi.com/v1/forecast.json?key=d47cbbbfa3eb4933b77121938231006&q=Tokyo&days=7',
+        'https://api.weatherapi.com/v1/forecast.json?key=416f2f5d326942f59f651727232206&q=Tokyo&days=7',
       );
       setWeather(response.data);
     } catch (error) {
