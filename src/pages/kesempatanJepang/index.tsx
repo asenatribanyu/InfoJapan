@@ -33,95 +33,52 @@ const KesempatanJepang = () => {
           </View>
 
           <View style={styles.card}>
-            <View style={styles.pointWrapper2}>
-              <Text style={styles.pointHeader}>Bagaimana Caranya?</Text>
+            <View style={styles.pointWrapper3}>
+              <Text style={styles.pointHeader}>
+                Jalin Pertemanan/Homestay di Jepang
+              </Text>
             </View>
             <View style={styles.cardDesc3}>
-              <View style={styles.numberWrapper2}>
-                <Layout style={styles.number}>
-                  <Text style={styles.text2}>1</Text>
-                </Layout>
-                <Text style={styles.text}>
-                  Jalin Pertemanan/Homestay di Jepang
-                </Text>
+              <View style={styles.imgWrapper2}>
+                <Image
+                  style={styles.img3}
+                  source={require('../../assets/img/Homestay.png')}
+                />
+                <Text style={styles.text}>Sumber: Homestay-in-japan.com</Text>
               </View>
             </View>
-          </View>
-
-          <View style={styles.imgWrapper}>
-            <Image
-              style={styles.img3}
-              source={require('../../assets/img/Homestay.png')}
-            />
-            <Text style={styles.text}>Sumber: Homestay-in-japan.com</Text>
           </View>
 
           <View style={styles.card}>
             <View style={styles.pointWrapper2}>
-              <Text style={styles.pointHeader}>Bagaimana Caranya?</Text>
+              <Text style={styles.pointHeader}>Ikuti Ajang Talent</Text>
             </View>
             <View style={styles.cardDesc3}>
-              <View style={styles.numberWrapper2}>
-                <Layout style={styles.number}>
-                  <Text style={styles.text2}>2</Text>
-                </Layout>
-                <Text style={styles.text}>Ikuti Ajang Talent</Text>
+              <View style={styles.imgWrapper2}>
+                <Image
+                  style={styles.img4}
+                  source={require('../../assets/img/Talent.jpg')}
+                />
+                <Text style={styles.text}>Sumber: Google</Text>
               </View>
             </View>
-          </View>
-
-          <View style={styles.imgWrapper}>
-            <Image
-              style={styles.img4}
-              source={require('../../assets/img/Talent.jpg')}
-            />
-            <Text style={styles.text}>Sumber: Google</Text>
           </View>
 
           <View style={styles.card}>
-            <View style={styles.pointWrapper2}>
-              <Text style={styles.pointHeader}>Bagaimana Caranya?</Text>
+            <View style={styles.pointWrapper4}>
+              <Text style={styles.pointHeader}>
+                Menangkan Lomba Berpidato Bahasa Jepang
+              </Text>
             </View>
             <View style={styles.cardDesc3}>
-              <View style={styles.numberWrapper2}>
-                <Layout style={styles.number}>
-                  <Text style={styles.text2}>3</Text>
-                </Layout>
-                <Text style={styles.text}>
-                  Menangkan Lomba Berpidato Bahasa Jepang
-                </Text>
+              <View style={styles.imgWrapper2}>
+                <Image
+                  style={styles.img4}
+                  source={require('../../assets/img/Pidato.jpg')}
+                />
+                <Text style={styles.text}>Sumber: Dok.Prodi BJ Widyatama</Text>
               </View>
             </View>
-          </View>
-
-          <View style={styles.imgWrapper}>
-            <Image
-              style={styles.img4}
-              source={require('../../assets/img/Pidato.jpg')}
-            />
-            <Text style={styles.text}>Sumber: Dok.Prodi BJ Widyatama</Text>
-          </View>
-
-          <View style={styles.card}>
-            <View style={styles.pointWrapper2}>
-              <Text style={styles.pointHeader}>Bagaimana Caranya?</Text>
-            </View>
-            <View style={styles.cardDesc3}>
-              <View style={styles.numberWrapper2}>
-                <Layout style={styles.number}>
-                  <Text style={styles.text2}>4</Text>
-                </Layout>
-                <Text style={styles.text}>Beasiswa</Text>
-              </View>
-            </View>
-          </View>
-
-          <View style={styles.imgWrapper}>
-            <Image
-              style={styles.img4}
-              source={require('../../assets/img/Beasiswa.jpg')}
-            />
-            <Text style={styles.text}>Sumber: Google</Text>
           </View>
 
           <View style={styles.card}>
@@ -211,12 +168,34 @@ const KesempatanJepang = () => {
             </View>
           </View>
 
-          <View style={styles.imgWrapper}>
-            <Image
-              style={styles.img3}
-              source={require('../../assets/img/Beasiswa2.jpg')}
-            />
-            <Text style={styles.text}>Sumber: Google</Text>
+          <View style={styles.card}>
+            <View style={styles.pointWrapper2}>
+              <Text style={styles.pointHeader}>Student Exchange</Text>
+            </View>
+            <View style={styles.cardDesc3}>
+              <View style={styles.imgWrapper2}>
+                <Image
+                  style={styles.img4}
+                  source={require('../../assets/img/Beasiswa.jpg')}
+                />
+                <Text style={styles.text}>Sumber: Google</Text>
+              </View>
+            </View>
+          </View>
+
+          <View style={styles.card}>
+            <View style={styles.pointWrapper}>
+              <Text style={styles.pointHeader}>Internship</Text>
+            </View>
+            <View style={styles.cardDesc3}>
+              <View style={styles.imgWrapper2}>
+                <Image
+                  style={styles.img3}
+                  source={require('../../assets/img/Beasiswa2.jpg')}
+                />
+                <Text style={styles.text}>Sumber: Google</Text>
+              </View>
+            </View>
           </View>
 
           <View style={styles.imgWrapper}>
@@ -311,6 +290,22 @@ const styles = StyleSheet.create({
     backgroundColor: '#1B263B',
   },
 
+  pointWrapper3: {
+    width: 250,
+    height: 175,
+    borderTopLeftRadius: 15,
+    borderBottomRightRadius: 15,
+    backgroundColor: '#1B263B',
+  },
+
+  pointWrapper4: {
+    width: 250,
+    height: 220,
+    borderTopLeftRadius: 15,
+    borderBottomRightRadius: 15,
+    backgroundColor: '#1B263B',
+  },
+
   pointHeader: {
     fontSize: 32,
     marginStart: 40,
@@ -372,6 +367,13 @@ const styles = StyleSheet.create({
     shadowOpacity: 1,
     shadowRadius: 2,
     elevation: 2,
+  },
+
+  imgWrapper2: {
+    padding: 10,
+    marginBottom: 25,
+    marginTop: 10,
+    alignItems: 'center',
   },
 
   text: {
